@@ -44,6 +44,9 @@
         </main>
 
         <!-- Footer -->
-        <footer id="footer">FunnyGuilds.net © 2014-2018. All Rights Reserved.</footer>
+        <footer id="footer">FunnyGuilds.net © 2014-<span id="year">2023</span>. All Rights Reserved.</footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear()
+        </script>
     </body>
 </html>
