@@ -1,0 +1,83 @@
+canvas {
+    -webkit-animation: fadein 0.1s;
+    -moz-animation: fadein 0.1s;
+    -o-animation: fadein 0.1s;
+    animation: fadein 0.1s;
+}
+
+#background {
+    background-color: #1c1c1c;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    position: fixed;
+}
+
+#body {
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+    overflow: hidden;
+}
+
+#content {
+    position: relative;
+    left: 80px;
+    top: 25%;
+    color: white;
+}
+
+#content h4 {
+    font-family: "Carrois";
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#content h1 {
+    font-family: Carrois;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-left: -3px;
+}
+
+#footer {
+    color: white;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

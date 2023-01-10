@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.0">
+        <meta name="description" content="FunnyGuilds is a fully customisable RPG plugin that allows you to create guilds">
+        <title>FunnyGuilds</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <script src="assets/js/background.js"></script>
+    </head>
+
+    <body id="body">
+        <!-- Background -->
+        <canvas id="background"></canvas>
+
+        <!-- Header -->
+        <header id="header">
+            <div id="logo">
+                <a href="./">FunnyGuilds</a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="./">STRONA GŁÓWNA</a></li>
+                    <li><a href="https://github.com/dzikoysk/FunnyGuilds/releases">DOWNLOAD</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <!-- Content -->
+            <div id="content" onclick="location.href='.';" style="cursor:pointer;">
+                <h4>Aktualizacja</h4>
+                <h1>FunnyGuilds <span id="version"></span></h1>
+                <script>
+                    $.get("https://raw.githubusercontent.com/FunnyGuilds/FunnyGuilds/master/updater.txt").success((data) => {
+                        document.getElementById("version").innerHTML = data
+                    })
+                </script>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">FunnyGuilds.net © 2014-2018. All Rights Reserved.</footer>
+    </body>
+</html>

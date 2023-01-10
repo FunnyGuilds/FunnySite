@@ -1,0 +1,23 @@
+#main {
+    position: relative;
+    background-color: white;
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 80px;
+    top: 80px;
+    bottom: 10px;
+    width: calc(100% - 160px);
+    font-family: Carrois;
+}
+
+#footer {
+    color: black;
+}

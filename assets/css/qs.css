@@ -1,0 +1,55 @@
+.form {
+    position: absolute;
+    width: 800px;
+    left: calc((100% - 800px)/2);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    padding: 0;
+    margin: 27px 0 27px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+}
+
+fieldset {
+    width: 800px;
+}
+
+.submit {
+    font-size: 14px;
+    height: 26px;
+    text-transform: uppercase;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+#ap {
+    width: 100%;
+    height: 120px;
+    border: 1px dashed #1d1d1d;
+}
+
+.lt {
+    font-weight: bold;
+    margin-bottom: 7px;
+    line-height: 30px;
+}
+
+.desc {
+    margin-top: 12px;
+    font-size: 10px;
+    color: #333333;
+    text-align: center;
+}
